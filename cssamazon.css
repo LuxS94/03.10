@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(225, 230, 234);
+}
+#logo {
+  background-color: #222f3f;
+  width: 100%;
+}
+#logo img {
+  width: 10%;
+}
+#menu {
+  background-color: #475a6d;
+  height: 2em;
+}
+#menu p {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 2%;
+  margin-top: 0.5%;
+}
+#menu p a,
+div h4 a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#orange {
+  background-color: orangered;
+}
+div h4 {
+  text-align: center;
+}
+#holgif {
+  width: 100%;
+  background-image: url(./assets/holgifgui.png);
+  background-size: contain;
+  background-position: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+#holgif h2,
+#holgif h4 {
+  text-align: center;
+  color: white;
+}
+#mainer {
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#mainer h4 {
+  text-align: left;
+}
+#mainer h4 a {
+  margin-left: 2%;
+  text-decoration: none;
+  color: rgb(11, 96, 216);
+}
+#sequenza {
+  text-align: center;
+}
+#sequenza img {
+  display: inline-block;
+  width: 20%;
+
+  margin-right: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  border-radius: 5%;
+  box-shadow: 7px 6px 9px 3px #cacaca, 7px 6px 9px 3px #cacaca;
+}
+#cuffie {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#cuffie img {
+  width: 100%;
+  margin-top: 2%;
+}
+#cuffie h4,
+#cuffie h4 a {
+  margin-top: 0%;
+}
+#cuffie h4 a {
+  margin-left: 2%;
+  color: rgb(40, 188, 217);
+}
+#glass {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#glass img {
+  width: 100%;
+}
+#glass h4 {
+  margin-top: 0%;
+}
+#glass h4 a {
+  margin-left: 2%;
+  color: rgb(40, 188, 217);
+}
+#back {
+  background-color: #475a6d;
+  margin-bottom: 0%;
+}
+
+#back h4 {
+  margin-bottom: 0%;
+}
+#back h4 a {
+  text-decoration: underline;
+}
+#end {
+  background-color: #222f3f;
+  margin-top: 0%;
+  text-align: center;
+}
+#end img {
+  display: inline-block;
+  width: 10%;
+  padding: 3%;
+}
