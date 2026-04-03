@@ -18,9 +18,8 @@ for (let i = 0; i < pets.length; i++) {
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
-
+pets.sort();
 for (let i = 0; i < pets.length; i++) {
-  pets.sort();
   console.log(pets[i]);
 }
 
@@ -90,27 +89,29 @@ console.log(cars);
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = [];
-let primoEl = cars.map((cars) => cars.trims[0]);
-console.log(primoEl);
+cars.forEach((car) => justTrims.push(car.trims[0]));
+console.log(justTrims);
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
-if (cars.color.startsWith("b")) {
-  console.log("Fizz");
-} else {
-  console.log("Buzz");
-}
+cars.forEach((car) => {
+  if (car.color.startsWith("b")) {
+    console.log("Fizz");
+  } else {
+    console.log("Buzz");
+  }
+});
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ];
-for (let i = 0; i < numericArray.length; i++) {
-  while (numericArray <= 32) {
-    console.log(numericArray);
-  }
+let i = 0;
+while (i < numericArray.length && numericArray[i] !== 32) {
+  console.log(numericArray[i]);
+  i++;
 }
 
 /* ESERCIZIO 10
@@ -120,26 +121,28 @@ for (let i = 0; i < numericArray.length; i++) {
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
 const position = [];
-for (let i = 0; i < charactersArray; i++) {
-  let pos = charactersArray[i];
+for (let i = 0; i < charactersArray.length; i++) {
+  let letter = charactersArray[i];
+  let pos;
 
-  switch (charactersArray) {
+  switch (letter) {
     case "g":
-      7;
+      pos = 7;
       break;
     case "n":
-      14;
+      pos = 14;
       break;
     case "u":
-      21;
+      pos = 21;
       break;
     case "z":
-      26;
+      pos = 26;
       break;
     case "d":
-      4;
+      pos = 4;
       break;
   }
+
   position.push(pos);
 }
 console.log(position);
