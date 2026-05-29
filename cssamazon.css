@@ -71,7 +71,9 @@ div h4 {
   margin-bottom: 1%;
   margin-left: 1%;
   border-radius: 5%;
-  box-shadow: 7px 6px 9px 3px #cacaca, 7px 6px 9px 3px #cacaca;
+  box-shadow:
+    7px 6px 9px 3px #cacaca,
+    7px 6px 9px 3px #cacaca;
 }
 #cuffie {
   margin-left: 5%;
@@ -123,4 +125,10 @@ div h4 {
   display: inline-block;
   width: 10%;
   padding: 3%;
+}
+.im {
+  height: 150px;
+  width: 187px;
+  display: inline-block;
+  object-fit: cover;
 }
